@@ -1,0 +1,36 @@
+
+{
+    "name": "StockPlay - Java 21",
+
+    "image": "mcr.microsoft.com/devcontainers/java:21-bookworm",
+
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+        "version": "none",
+        "installMaven": true
+        },
+        "ghcr.io/devcontainers/features/git:1": {
+        "version": "system"
+        }
+    },
+
+    "customizations": {
+        "vscode": {
+        "extensions": [
+            "vscjava.vscode-java-pack",
+            "vmware.vscode-boot-dev-pack",
+            "GitHub.vscode-pull-request-github",
+            "usernamehw.errorlens",
+            "oderwat.indent-rainbow",
+            "eamodio.gitlens",
+            "esbenp.prettier-vscode",
+            "dracula-theme.theme-dracula",
+            "openai.chatgpt"
+        ]
+        }
+    },
+
+    "forwardPorts": [8080],
+
+    "remoteUser": "vscode"
+}
